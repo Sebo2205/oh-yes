@@ -14,7 +14,8 @@ module.exports = {
                     icon_url: del.author.displayAvatarURL()
                 },
                 description: del.content.slice(0, 2000),
-                footer: { text: `Messages left: ${message.client.snipe.length - 1}/${message.client.snipeLimit}` }
+                footer: { text: `Messages left: ${message.client.snipe.length - 1}/${message.client.snipeLimit}` },
+                color: 0x2f3136
             }
             if (del.embeds[0]) {
                 var e = del.embeds[0];
